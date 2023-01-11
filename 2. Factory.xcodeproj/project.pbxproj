@@ -13,6 +13,10 @@
 		5DF25902296F124D00CD3A2B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DF25900296F124D00CD3A2B /* Main.storyboard */; };
 		5DF25904296F124F00CD3A2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DF25903296F124F00CD3A2B /* Assets.xcassets */; };
 		5DF25907296F124F00CD3A2B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DF25905296F124F00CD3A2B /* LaunchScreen.storyboard */; };
+		5DF25918296F166700CD3A2B /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF25917296F166700CD3A2B /* Exercise.swift */; };
+		5DF2591D296F170600CD3A2B /* Jumping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF2591C296F170600CD3A2B /* Jumping.swift */; };
+		5DF2591F296F176800CD3A2B /* Squads.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF2591E296F176800CD3A2B /* Squads.swift */; };
+		5DF25922296F17E100CD3A2B /* ExerciseFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF25921296F17E100CD3A2B /* ExerciseFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,12 @@
 		5DF25903296F124F00CD3A2B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5DF25906296F124F00CD3A2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5DF25908296F124F00CD3A2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5DF25914296F12AF00CD3A2B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		5DF25915296F156700CD3A2B /* PRO-CONS-FACTORY.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PRO-CONS-FACTORY.png"; sourceTree = "<group>"; };
+		5DF25917296F166700CD3A2B /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
+		5DF2591C296F170600CD3A2B /* Jumping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jumping.swift; sourceTree = "<group>"; };
+		5DF2591E296F176800CD3A2B /* Squads.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Squads.swift; sourceTree = "<group>"; };
+		5DF25921296F17E100CD3A2B /* ExerciseFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +50,8 @@
 		5DF258EE296F124D00CD3A2B = {
 			isa = PBXGroup;
 			children = (
+				5DF25915296F156700CD3A2B /* PRO-CONS-FACTORY.png */,
+				5DF25914296F12AF00CD3A2B /* README.md */,
 				5DF258F9296F124D00CD3A2B /* 2. Factory */,
 				5DF258F8296F124D00CD3A2B /* Products */,
 			);
@@ -56,15 +68,99 @@
 		5DF258F9296F124D00CD3A2B /* 2. Factory */ = {
 			isa = PBXGroup;
 			children = (
+				5DF25916296F165E00CD3A2B /* DataLayer */,
+				5DF2590F296F125A00CD3A2B /* PresentationLayer */,
+				5DF2590E296F125400CD3A2B /* AppLayer */,
+				5DF25913296F127500CD3A2B /* Resources */,
+			);
+			path = "2. Factory";
+			sourceTree = "<group>";
+		};
+		5DF2590E296F125400CD3A2B /* AppLayer */ = {
+			isa = PBXGroup;
+			children = (
 				5DF258FA296F124D00CD3A2B /* AppDelegate.swift */,
 				5DF258FC296F124D00CD3A2B /* SceneDelegate.swift */,
-				5DF258FE296F124D00CD3A2B /* ViewController.swift */,
+			);
+			path = AppLayer;
+			sourceTree = "<group>";
+		};
+		5DF2590F296F125A00CD3A2B /* PresentationLayer */ = {
+			isa = PBXGroup;
+			children = (
+				5DF25920296F17D700CD3A2B /* Factories */,
+				5DF25910296F126300CD3A2B /* Scenes */,
+			);
+			path = PresentationLayer;
+			sourceTree = "<group>";
+		};
+		5DF25910296F126300CD3A2B /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				5DF25912296F126F00CD3A2B /* Main */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		5DF25911296F126800CD3A2B /* Skeleton */ = {
+			isa = PBXGroup;
+			children = (
 				5DF25900296F124D00CD3A2B /* Main.storyboard */,
+			);
+			path = Skeleton;
+			sourceTree = "<group>";
+		};
+		5DF25912296F126F00CD3A2B /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				5DF25911296F126800CD3A2B /* Skeleton */,
+				5DF258FE296F124D00CD3A2B /* ViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		5DF25913296F127500CD3A2B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				5DF25903296F124F00CD3A2B /* Assets.xcassets */,
 				5DF25905296F124F00CD3A2B /* LaunchScreen.storyboard */,
 				5DF25908296F124F00CD3A2B /* Info.plist */,
 			);
-			path = "2. Factory";
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		5DF25916296F165E00CD3A2B /* DataLayer */ = {
+			isa = PBXGroup;
+			children = (
+				5DF2591B296F16FB00CD3A2B /* ConcreteProducts */,
+				5DF25919296F16ED00CD3A2B /* Product */,
+			);
+			path = DataLayer;
+			sourceTree = "<group>";
+		};
+		5DF25919296F16ED00CD3A2B /* Product */ = {
+			isa = PBXGroup;
+			children = (
+				5DF25917296F166700CD3A2B /* Exercise.swift */,
+			);
+			path = Product;
+			sourceTree = "<group>";
+		};
+		5DF2591B296F16FB00CD3A2B /* ConcreteProducts */ = {
+			isa = PBXGroup;
+			children = (
+				5DF2591C296F170600CD3A2B /* Jumping.swift */,
+				5DF2591E296F176800CD3A2B /* Squads.swift */,
+			);
+			path = ConcreteProducts;
+			sourceTree = "<group>";
+		};
+		5DF25920296F17D700CD3A2B /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				5DF25921296F17E100CD3A2B /* ExerciseFactory.swift */,
+			);
+			path = Factories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +234,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DF2591F296F176800CD3A2B /* Squads.swift in Sources */,
 				5DF258FF296F124D00CD3A2B /* ViewController.swift in Sources */,
+				5DF25918296F166700CD3A2B /* Exercise.swift in Sources */,
+				5DF25922296F17E100CD3A2B /* ExerciseFactory.swift in Sources */,
 				5DF258FB296F124D00CD3A2B /* AppDelegate.swift in Sources */,
+				5DF2591D296F170600CD3A2B /* Jumping.swift in Sources */,
 				5DF258FD296F124D00CD3A2B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,7 +389,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7FCTC6DRE7;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "2. Factory/Info.plist";
+				INFOPLIST_FILE = "2. Factory/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -317,7 +417,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7FCTC6DRE7;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "2. Factory/Info.plist";
+				INFOPLIST_FILE = "2. Factory/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
